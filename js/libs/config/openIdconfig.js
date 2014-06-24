@@ -1,0 +1,13 @@
+var OAUTHURL = 'https://accounts.google.com/o/oauth2/auth?';
+var VALIDURL = 'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=';
+var SCOPE = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
+var CLIENTID = '1006216033805-2l01174e0098s607sptpq599c04kvh7n.apps.googleusercontent.com';
+var REDIRECT = 'http://edusocially.com/github/code/userInfo.html';
+var LOGOUT = 'http://accounts.google.com/Logout';
+var TYPE = 'token';
+var _url = OAUTHURL + 'scope=' + SCOPE + '&client_id=' + CLIENTID + '&redirect_uri=' + REDIRECT + '&response_type=' + TYPE;
+var acToken;
+var tokenType;
+var expiresIn;
+var user;
+var loggedIn = false;
